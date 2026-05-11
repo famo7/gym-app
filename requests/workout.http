@@ -1,0 +1,26 @@
+### Get all workouts
+GET http://localhost:8080/api/workouts
+Content-Type: application/json
+
+### Get workout by id
+GET http://localhost:8080/api/workouts/1
+Content-Type: application/json
+
+### Create workout
+POST http://localhost:8080/api/workouts
+Content-Type: application/json
+
+{
+  "name": "pull Day"
+}
+
+### Update workout
+PUT http://localhost:8080/api/workouts/2
+Content-Type: application/json
+
+{
+  "name": "Pull Day"
+}
+
+### Delete workout
+DELETE http://localhost:8080/api/workouts/2
