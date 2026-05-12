@@ -1,0 +1,16 @@
+### Get exercises in a workout
+GET http://localhost:8080/api/workouts/1/exercises
+Content-Type: application/json
+
+### Add exercise to workout
+POST http://localhost:8080/api/workouts/1/exercises
+Content-Type: application/json
+
+{
+  "exerciseId": 3,
+  "orderIndex": 1,
+  "notes": "warmup set"
+}
+
+### Remove exercise from workout
+DELETE http://localhost:8080/api/workouts/1/exercises/3

@@ -30,7 +30,7 @@ public class WorkoutExercise {
     @EqualsAndHashCode.Exclude
     private Exercise exercise;
 
-    @OneToMany(mappedBy = "workoutExercise")
+    @OneToMany(mappedBy = "workoutExercise", cascade = CascadeType.REMOVE)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private List<WorkoutSet> sets;
